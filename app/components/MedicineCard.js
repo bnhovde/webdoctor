@@ -8,7 +8,7 @@ const MedicineCard = ({drug}) => {
     return (
         <Link to={`medication/${drug.id}`} className="pod pod--btn">
             <div className="pod__avatar">
-                <Icon icon="person" className="avatar" viewBox="0 0 24 32" />
+                <Icon icon="aid" className="aid" viewBox="0 0 32 32" />
             </div>
             <h1 className="pod__headline">{generic_name}</h1>
             <h2 className="pod__description">{brand_name}</h2>

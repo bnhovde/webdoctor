@@ -26,6 +26,9 @@
  
  html {
      font-weight: $shell-g-font-weight-light;
+     @include breakpoint('retina-bear'){
+         font-weight: $shell-g-font-weight-normal;
+     }
  }
  
  a {

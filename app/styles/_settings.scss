@@ -53,13 +53,13 @@ $g-color-harsh: #EE2D51;
 $shell-g-color-text-base: $g-color-text;
 
 // Subtle
-$g-color-subtle: rgba($g-color-active, 0.6);
+$g-color-subtle: rgba(white, 0.6);
 
 /**
  * Links.
  */
 
-$shell-g-color-link: $g-color-active;
+$shell-g-color-link: $g-color-pri;
 $shell-g-color-link-hover: $g-color-active;
 
 

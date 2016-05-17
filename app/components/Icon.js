@@ -4,9 +4,9 @@ import React from 'react';
 
 function renderGraphic(icon) {
     switch (icon) {
-        case 'submit':
+        case 'search':
             return (
-                <path d="M0 20h16l-6 6 6 6 16-16-16-16-6 6 6 6h-16z"></path>
+                <path class="path1" d="M9.516 14.016c2.484 0 4.5-2.016 4.5-4.5s-2.016-4.5-4.5-4.5-4.5 2.016-4.5 4.5 2.016 4.5 4.5 4.5zM15.516 14.016l4.969 4.969-1.5 1.5-4.969-4.969v-0.797l-0.281-0.281c-1.125 0.984-2.625 1.547-4.219 1.547-3.609 0-6.516-2.859-6.516-6.469s2.906-6.516 6.516-6.516 6.469 2.906 6.469 6.516c0 1.594-0.563 3.094-1.547 4.219l0.281 0.281h0.797z"></path>
             );
         case 'close':
             return (
@@ -19,6 +19,10 @@ function renderGraphic(icon) {
         case 'add':
             return (
                 <path d="M18.984 12.984h-6v6h-1.969v-6h-6v-1.969h6v-6h1.969v6h6v1.969z"></path>
+            );
+        case 'aid':
+            return (
+                <path d="M28 8h-6v-4c0-1.1-0.9-2-2-2h-8c-1.1 0-2 0.9-2 2v4h-6c-2.2 0-4 1.8-4 4v16c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-16c0-2.2-1.8-4-4-4zM12 4h8v4h-8v-4zM24 22h-6v6h-4v-6h-6v-4h6v-6h4v6h6v4z"></path>
             );
         case 'person':
             return (

@@ -18,7 +18,7 @@ const SearchForm = ({query, onSubmitSearch, onChangeSearch, disabled}) => {
                     onClick={onSubmitSearch}
                     disabled={disabled}
                 >
-                    <Icon viewBox="0 0 32 32" size="small" icon="submit" />
+                    <Icon viewBox="0 0 24 24" size="small" icon="search" />
                 </button>
             </div>
         </form>

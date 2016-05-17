@@ -33,5 +33,9 @@
         @include breakpoint('teen-bear'){
             font-size: rem($shell-g-font-size-heading-huge);
         }
+        
+        @include breakpoint('retina-bear'){
+            font-weight: $shell-g-font-weight-normal;
+        }
     }
 }
