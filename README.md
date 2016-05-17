@@ -1,13 +1,17 @@
 
 ### Webdoctor
 
-> Patient management application
+> Patient management application written in ES6 and react.
 
 [Live Demo](https://bardhovde.com/webdoctor/)
 
 * Add/remove patients
 * Add/remove prescriptions
 * Search/browse medicine database
+
+### Notes
+
+Uses [eslint-config-madewithlove](https://github.com/madewithlove/eslint-config-madewithlove) linting rules. 
 
 ### Requirements
 
