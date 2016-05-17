@@ -4,6 +4,12 @@
    
 .patients-card {
     
+    &:hover {
+        .patients-card__icon {
+           background-color: $g-color-active;    
+        }
+    }
+    
     /**
     * Elements
     */
@@ -12,6 +18,7 @@
         height: rem(210);
         background-color: $g-color-gray;
         padding: rem($shell-g-spacing-base);
+        transition: background-color .3s ease;
         
         > svg { 
             height: 100%;

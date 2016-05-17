@@ -22,12 +22,15 @@
         height: 70px;
         max-width: 400px;
         margin: 0;
-        padding: rem($shell-g-spacing-small) rem($shell-g-spacing-large);
         font-size: rem($shell-g-font-size-large);
         color: $g-color-text;
         background-color: $g-color-gray;
         border: 0;
         text-align: center;
+        
+        @include breakpoint('teen-bear'){
+            padding: rem($shell-g-spacing-small) rem($shell-g-spacing-large);
+        }
         
         &::-webkit-input-placeholder {
             color: $g-color-text;

@@ -23,7 +23,12 @@ MODULES -> PATIENTS LIST
     
     &__item {    
         width: 100%;
-        max-width: 240px;
         margin: rem($shell-g-spacing-base);
+        margin-bottom: 0;
+        
+        @include breakpoint('baby-bear'){
+            max-width: 240px;
+            margin: rem($shell-g-spacing-base);
+        }
     }
 }

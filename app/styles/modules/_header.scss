@@ -11,19 +11,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 rem($shell-g-spacing-2x-large);
+    padding: 0 rem($shell-g-spacing-base);
     background-color: $g-color-pri;
-    min-height: rem(170);
+    min-height: rem(100);
+    
+    @include breakpoint('teen-bear'){
+        min-height: rem(170);
+        padding: 0 rem($shell-g-spacing-2x-large);
+    }
     
     /**
     * Elements
     */
     
     &__title {
-        font-size: rem($shell-g-font-size-heading-huge);
         font-weight: $shell-g-font-weight-light;
         color: white;
         text-transform: uppercase;
         letter-spacing: 2px;
+        
+        @include breakpoint('teen-bear'){
+            font-size: rem($shell-g-font-size-heading-huge);
+        }
     }
 }

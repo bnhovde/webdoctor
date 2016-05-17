@@ -31,7 +31,7 @@ const MedicineDetail = ({drug, handleAdd}) => {
 
             <div className="block block--justified">
                 <Link to="medication" className="btn">Back to search</Link>
-                <button onClick={() => handleAdd()} className="btn btn--bad">Add to patient</button>
+                <button onClick={() => handleAdd()} className="btn btn--good">Add to patient</button>
             </div>
         </div>
     );

@@ -8,19 +8,28 @@ MODULES -> BUTTON
 
 .btn {
     display: inline-block;
+    width: 100%;
     min-width: 250px;
     line-height: 70px;
     padding: 0 rem(20);
     color: white;
-    background-color: $g-color-pri;
+    background-color: $g-color-dark;
     letter-spacing: 1px;
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     
+    @include breakpoint('baby-bear'){
+        width: auto;
+    }
+    
     &--bad {
         background-color: $g-color-harsh; 
+    }
+    
+    &--good {
+        background-color: $g-color-pri; 
     }
     
     &--stack {

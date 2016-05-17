@@ -35,7 +35,7 @@ const PatientDetail = props => {
             </div>
 
             <div className="block block--justified">
-                <Link to="medication" className="btn">Add New</Link>
+                <Link to="medication" className="btn btn--good">Add New</Link>
                 <button onClick={() => handleDelete(patientId)} className="btn btn--bad">Delete {name}</button>
             </div>
         </div>

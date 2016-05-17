@@ -8,5 +8,8 @@ LAYOUT -> MAIN
  
 .l-main {
     position: relative;
-    padding-top: 100px;
+    
+    @include breakpoint('teen-bear'){
+        padding-top: rem(100);
+    }
 }

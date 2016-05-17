@@ -24,13 +24,17 @@
     
     &__foreground {
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 0;
         bottom: 0;
         right: 0;
         background-color: $g-color-text;
         transform: translateY(100%);
         transition: transform .3s ease;
+        
+        @include breakpoint('teen-bear'){
+            top: 50%;
+        }
     }
        
     &__background {

@@ -11,6 +11,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    min-width: rem(320);
     background-color: $g-color-pri;
     border-bottom: rem(13) solid #f7f7f7;
     
@@ -20,12 +21,19 @@
     
     &__item {
         display: block;
-        padding: rem($shell-g-spacing-small) rem($shell-g-spacing-2x-large);
+        flex-grow: 1;
+        padding: rem($shell-g-spacing-small);
         margin-bottom: rem(-13);
         color: white;
-        letter-spacing: 1px;
         text-transform: uppercase;
+        text-align: center;
         border-bottom: rem(13) solid $g-color-gray;
+        
+        @include breakpoint('teen-bear'){
+            flex-grow: 0;
+            padding: rem($shell-g-spacing-small) rem($shell-g-spacing-2x-large);
+            letter-spacing: 1px;
+        }
         
         // Active navigation item
         &--active { border-color: $g-color-active; }

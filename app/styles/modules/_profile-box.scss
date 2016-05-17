@@ -16,10 +16,15 @@
     */
     
     &__name {
+        display: none;
         margin-right: rem($shell-g-spacing-large);
         font-size: rem($shell-g-font-size-heading);
         color: white;
         letter-spacing: 1px;
+        
+        @include breakpoint('teen-bear'){ 
+            display: block;
+        }
     }
     
     &__title {
@@ -28,9 +33,15 @@
     }
     
     &__avatar {
-        width: rem(60);
-        height: rem(60);
+        width: rem(40);
+        height: rem(40);
         background-color: $g-color-active;
         border-radius: 50%;
+
+        
+        @include breakpoint('teen-bear'){ 
+            width: rem(60);
+            height: rem(60);
+        }
     }
 }
