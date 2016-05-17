@@ -13,7 +13,7 @@ const AddPatientForm = ({handleSubmit, handleChange, name}) => {
                     value={name}
                 />
                 <button className="form__btn" onClick={handleSubmit}>
-                    <Icon viewBox="0 0 32 32" size="small" icon="submit" />
+                    <Icon viewBox="0 0 24 24" class="add" icon="add" />
                 </button>
             </div>
         </form>
