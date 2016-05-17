@@ -1,0 +1,33 @@
+/* ============================================================================
+   MODULES -> NAV
+   ========================================================================= */
+
+/**
+ * Main nav component
+ */
+ 
+.navbar {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $g-color-pri;
+    border-bottom: rem(13) solid #f7f7f7;
+    
+    /**
+    * Elements
+    */
+    
+    &__item {
+        display: block;
+        padding: rem($shell-g-spacing-small) rem($shell-g-spacing-2x-large);
+        margin-bottom: rem(-13);
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: rem(13) solid $g-color-gray;
+        
+        // Active navigation item
+        &--active { border-color: $g-color-active; }
+    }
+}

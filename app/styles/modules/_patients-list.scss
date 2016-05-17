@@ -1,0 +1,29 @@
+/* ============================================================================
+MODULES -> PATIENTS LIST
+========================================================================= */
+
+/**
+ * patients-list box
+ */
+ 
+.patients-list {
+    
+    /**
+    * Elements
+    */
+    
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+        transition: all .4s ease;
+    }
+    
+    &__item {    
+        width: 100%;
+        max-width: 240px;
+        margin: rem($shell-g-spacing-base);
+    }
+}

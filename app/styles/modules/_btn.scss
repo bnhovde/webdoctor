@@ -1,0 +1,30 @@
+/* ============================================================================
+MODULES -> BUTTON
+========================================================================= */
+
+/**
+ * back-arrow component
+ */
+
+.btn {
+    display: inline-block;
+    min-width: 250px;
+    line-height: 70px;
+    padding: 0 rem(20);
+    color: white;
+    background-color: $g-color-pri;
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    &--bad {
+        background-color: $g-color-harsh; 
+    }
+    
+    &--stack {
+        background-color: transparent;
+        min-width: 33.3%;
+    }
+}

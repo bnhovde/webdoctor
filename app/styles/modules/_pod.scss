@@ -1,0 +1,62 @@
+/* ============================================================================
+MODULES -> POD
+========================================================================= */
+
+/**
+ * Pod item
+ */
+  
+.pod {
+    
+    display: block;
+    width: 100%;
+    min-height: rem(150);
+    text-align: left;
+    border-bottom: 13px solid $g-color-text;
+    padding-bottom: rem($shell-g-spacing-x-large);
+    transition: all .2s ease;
+    
+    /**
+    * Elements
+    */
+    
+    &__headline{
+        font-size: rem($shell-g-font-size-heading);
+    }
+    
+    &__description {
+        font-size: rem($shell-g-font-size-heading);
+        font-weight: $shell-g-font-weight-light;
+        font-style: italic;
+    }
+    
+    &__status {
+        font-size: rem(17);
+        font-weight: $shell-g-font-weight-light;
+    }
+    
+    &__avatar {
+        width: 80px;
+        background-color: $g-color-gray;
+        float: left;
+        margin-right: rem($shell-g-spacing-base);
+        text-align: center;
+        
+        > svg {
+            width: 100%;
+            padding: rem($shell-g-spacing-base);
+        }
+    }
+    
+    /**
+    * Variations
+    */
+    
+    // Clickable pod element
+    &--btn {
+        border-color: $g-color-gray;
+        &:hover {
+            border-color: $g-color-active;
+        }
+    }
+}

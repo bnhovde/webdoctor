@@ -1,0 +1,23 @@
+/* ============================================================================
+   MODULES -> PATIENT-DETAIL
+   ========================================================================= */
+   
+.block {
+    
+    /**
+    * Elements
+    */
+    
+    margin: rem($shell-g-spacing-x-large) 0;
+    list-style-type: none;
+    
+    /**
+    * Variations
+    */  
+    
+    &--justified {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,44 @@
+/* ============================================================================
+   MODULES -> FORM
+   ========================================================================= */
+   
+.form {
+    
+    width: 100%;
+    text-align: center;
+    padding: rem($shell-g-spacing-large);
+
+    /**
+    * Elements
+    */
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__input {
+        height: 70px;
+        max-width: 400px;
+        margin: 0;
+        padding: rem($shell-g-spacing-small) rem($shell-g-spacing-large);
+        font-size: rem($shell-g-font-size-large);
+        color: $g-color-text;
+        background-color: $g-color-gray;
+        border: 0;
+        text-align: center;
+        
+        &::-webkit-input-placeholder {
+            color: $g-color-text;
+        }
+    }
+    
+    &__btn {
+        width: 70px;
+        height: 70px;
+        background-color: $g-color-pri;
+        
+        > svg { width: 60%; }
+    }
+}

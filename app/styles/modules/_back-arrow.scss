@@ -1,0 +1,17 @@
+/* ============================================================================
+MODULES -> BACK-ARROW
+========================================================================= */
+
+/**
+ * back-arrow component
+ */
+
+.back-arrow {
+    
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    background-color: $g-color-pri;
+}

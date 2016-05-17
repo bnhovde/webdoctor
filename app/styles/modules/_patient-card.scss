@@ -1,0 +1,44 @@
+/* ============================================================================
+   MODULES -> PATIENTS-CARD
+   ========================================================================= */
+   
+.patients-card {
+    
+    /**
+    * Elements
+    */
+    
+    &__icon {
+        height: rem(210);
+        background-color: $g-color-gray;
+        padding: rem($shell-g-spacing-base);
+        
+        > svg { 
+            height: 100%;
+            width: 100%;
+            fill: white; 
+        }
+    }
+    
+    &__details {
+        padding: rem($shell-g-spacing-base);
+        font-size: rem($shell-g-font-size-heading);
+        color: $g-color-text;
+    }
+    
+    /**
+    * Variants
+    */
+    
+    // Add new patient card
+    &--add {
+        .patients-card__icon {
+            background-color: $g-color-pri;
+            > svg {
+                width: 50%;
+                fill: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+}
